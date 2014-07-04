@@ -1,7 +1,7 @@
 {
   "name": "react-component-grid",
   "version": "0.0.1",
-  "description": "Grid component and mixins for React.",
+  "description": "Grid component for React.",
   "main": "index.js",
   "scripts": {
     "test": "grunt test"
@@ -35,8 +35,8 @@
     "grunt-mocha-test": "^0.11.0",
     "grunt-react": "^0.8.2",
     "jsdom": "^0.11.0",
-    "sinon": "^1.10.2",
-    "rewire": "^2.0.1"
+    "rewire": "^2.0.1",
+    "sinon": "^1.10.2"
   },
   "dependencies": {
     "envify": "^1.2.1",
