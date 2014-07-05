@@ -1,6 +1,6 @@
 {
   "name": "react-component-grid",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Grid component for React.",
   "main": "index.js",
   "scripts": {
