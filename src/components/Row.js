@@ -1,7 +1,5 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-
 var Cell = require('./Cell');
 
 var Row = React.createClass({
@@ -29,6 +27,7 @@ var Row = React.createClass({
                 <Cell
                 className={this.props.cellClassName}
                 column={column}
+                columns={this.props.columns}
                 key={key}
                 record={record} />
             );

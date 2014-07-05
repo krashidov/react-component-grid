@@ -1,7 +1,5 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-
 var Cell = React.createClass({
     render: function() {
         return (

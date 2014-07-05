@@ -1,7 +1,7 @@
 /** @jsx React.DOM */
 
 var assert = require('chai').assert;
-var TestUtils = require('react/addons').addons.TestUtils;
+var TestUtils = React.addons.TestUtils;
 
 var Cell = require('../Cell');
 

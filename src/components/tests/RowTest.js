@@ -1,7 +1,6 @@
 /** @jsx React.DOM */
 
 var assert = require('chai').assert;
-var React = require('react/addons');
 var rewire = require('rewire');
 var TestUtils = React.addons.TestUtils;
 

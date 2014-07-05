@@ -2,7 +2,7 @@
 
 var assert = require('chai').assert;
 var stub = require('sinon').stub;
-var TestUtils = require('react/addons').addons.TestUtils;
+var TestUtils = React.addons.TestUtils;
 
 var Header = require('../Header');
 

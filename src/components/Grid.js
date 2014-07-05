@@ -1,7 +1,5 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-
 var Header = require('./Header');
 var Row = require('./Row');
 
@@ -76,9 +74,9 @@ var Grid = React.createClass({
                 className={this.props.headerClassName}
                 column={column}
                 columnIndex={columnIndex}
-                sortedIndex={this.state.sortedIndex}
-                onHeaderClick={this.props.onHeaderClick}
-                onGridSort={this.onGridSort}
+                columns={this.props.columns}
+                onClick={this.props.onHeaderClick}
+                grid={this}
                 key={key} />
             );
         }, this);
@@ -103,16 +101,6 @@ var Grid = React.createClass({
                 rowIndex={rowIndex} />
             );
         }, this);
-    },
-
-    /**
-     * @onGridSort
-     * Sets the component's sortedIndex state when a column header is clicked.
-     */
-    onGridSort: function(columnIndex) {
-        this.setState({
-            sortedIndex: columnIndex
-        });
     }
 });
 

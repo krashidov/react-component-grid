@@ -71,6 +71,7 @@ module.exports = function(grunt) {
         );
         global.document = global.window.document;
         global.navigator = global.window.navigator;
+        global.React = require('react/addons');
 
         //silence React complaints during tests
         global.console.warn = function() {};
@@ -89,17 +90,6 @@ module.exports = function(grunt) {
         clean: {
             coverage: ['.coverage'],
             grunt: ['.grunt']
-        },
-
-        /**
-         * Bundles the example files for use in the browser.
-         */
-        browserify: {
-            examples: {
-                files: {
-                    'examples/bundle.js': '.grunt/examples/transformed/*.js'
-                }
-            }
         },
 
         /**
@@ -167,12 +157,6 @@ module.exports = function(grunt) {
                     cwd: 'src',
                     src: ['*.js', '**/*.js'],
                     dest: '.grunt/transformed',
-                    ext: '.js'
-               }, {
-                    expand: true,
-                    cwd: 'examples/src',
-                    src: ['*.js', '**/*.js'],
-                    dest: '.grunt/examples/transformed',
                     ext: '.js'
                }]
             }

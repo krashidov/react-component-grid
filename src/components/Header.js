@@ -1,7 +1,5 @@
 /** @jsx React.DOM */
 
-var React = require('react');
-
 var Header = React.createClass({
     getInitialState: function() {
         return {
@@ -14,7 +12,7 @@ var Header = React.createClass({
         return (
             <th
             className={this.getClassName()}
-            onClick={this.getClickHandler()}>
+            onClick={this.props.onClick.bind(this)}>
                 {this.props.column.name}
             </th>
         );
@@ -27,34 +25,11 @@ var Header = React.createClass({
      * @returns {String} - The resulting class name.
      */
     getClassName: function() {
-        if (this.props.sortedIndex === this.props.columnIndex) {
-            return this.props.className + ' sorted-' + this.state.direction;
+        if (this.props.column.sorted) {
+            return this.props.className + ' sorted-' + this.props.column.sortedDirection;
         }
 
         return this.props.className;
-    },
-
-    /**
-     * @method getClickHandler
-     * Gets a handler for when the table header is clicked.
-     * Toggles the direction state and calls the supplied click handler.
-     * Finally calls the onGridSort method from the parent grid.
-     * @returns {Function} - The click handler for the table header.
-     */
-    getClickHandler: function() {
-        return function(evt) {
-            this.toggleDirection();
-
-            this.props.onHeaderClick.call(
-                this,
-                this.props.column,
-                this.props.columnIndex,
-                this.state.direction,
-                evt
-            );
-
-            this.props.onGridSort(this.props.columnIndex);
-        }.bind(this);
     },
 
     /**
