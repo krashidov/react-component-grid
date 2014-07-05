@@ -28,12 +28,4 @@ describe('Grid', function() {
         assert.equal(headers.length, 2);
         assert.equal(rows.length, 3);
     });
-
-    it('should set state on grid sort', function() {
-        var rendered = TestUtils.renderIntoDocument(<Grid columns={columns} data={data} />);
-
-        assert.equal(rendered.state.sortedIndex, -1);
-        rendered.onGridSort(4);
-        assert.equal(rendered.state.sortedIndex, 4);
-    });
 });
