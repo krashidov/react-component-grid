@@ -2,6 +2,10 @@
 
 var Cell = require('./Cell');
 
+/**
+ * @class Row
+ * Renders a row of cells for the grid.
+ */
 var Row = React.createClass({
     render: function() {
         return (

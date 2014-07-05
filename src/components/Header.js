@@ -1,5 +1,9 @@
 /** @jsx React.DOM */
 
+/**
+ * @class Header
+ * Renders a header for the grid.
+ */
 var Header = React.createClass({
     getInitialState: function() {
         return {

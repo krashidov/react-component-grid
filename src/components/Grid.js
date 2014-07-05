@@ -6,7 +6,10 @@ var Row = require('./Row');
 /** @method emptyFn - Default handler for all events */
 var emptyFn = function() {};
 
-/** @class Grid - A grid for rendering data. */
+/**
+ * @class Grid
+ * A grid for rendering data.
+ */
 var Grid = React.createClass({
     propTypes: {
 
@@ -62,7 +65,7 @@ var Grid = React.createClass({
 
     /**
      * @renderHeaders
-     * Gets an array of table header components for the grid.
+     * Gets an array of header components for the grid.
      * @returns [*] - An array of Header components.
      */
     renderHeaders: function() {
