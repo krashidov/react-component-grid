@@ -37,7 +37,6 @@ module.exports = function(grunt) {
     function loadNpmTasks() {
         var npmTasks = [
             'grunt-blanket',
-            'grunt-browserify',
             'grunt-contrib-clean',
             'grunt-contrib-jshint',
             'grunt-mocha-test',
