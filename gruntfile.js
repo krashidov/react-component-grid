@@ -7,7 +7,7 @@ module.exports = function(grunt) {
      * Registers grunt tasks for command line usage.
      */
     function registerTasks() {
-        grunt.registerTask('build', ['clean', 'react', 'browserify']);
+        grunt.registerTask('build', ['clean', 'react']);
         grunt.registerTask('test', ['clean', 'react', 'jshint', 'mochaTest', 'reportCoverage']);
     }
 
@@ -36,7 +36,6 @@ module.exports = function(grunt) {
      */
     function loadNpmTasks() {
         var npmTasks = [
-            'grunt-blanket',
             'grunt-contrib-clean',
             'grunt-contrib-jshint',
             'grunt-mocha-test',
