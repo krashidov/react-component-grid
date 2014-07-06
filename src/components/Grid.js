@@ -66,7 +66,7 @@ var Grid = React.createClass({
     /**
      * @renderHeaders
      * Gets an array of header components for the grid.
-     * @returns [*] - An array of Header components.
+     * @returns {Object[]} - An array of Header components.
      */
     renderHeaders: function() {
         return this.props.columns.map(function(column, columnIndex) {
@@ -88,7 +88,7 @@ var Grid = React.createClass({
     /**
      * @renderRows
      * Gets an array of row components for the grid.
-     * @returns [*] - An array of Row components.
+     * @returns {Object[]} - An array of Row components.
      */
     renderRows: function() {
         return this.props.data.map(function(record, rowIndex) {

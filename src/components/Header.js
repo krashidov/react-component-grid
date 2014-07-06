@@ -16,7 +16,7 @@ var Header = React.createClass({
         return (
             <th
             className={this.props.className}
-            onClick={this.props.onClick.bind(this)}>
+            onClick={this.props.onClick.bind(this, this.props.column)}>
                 {this.props.column.name}
             </th>
         );
