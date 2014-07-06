@@ -11,7 +11,7 @@ npm install react-component-grid
 
 To build the latest code directly from source:
 ```shell
-npm install git+git://github.com/ambitioninc/react-component-grid.git
+npm install git://github.com/ambitioninc/react-component-grid.git
 ```
 
 ## Documentation
