@@ -31,7 +31,7 @@ var Grid = React.createClass({
         /** @prop {Function} onHeaderClick - The method called when a grid header is clicked. */
         onHeaderClick: React.PropTypes.func,
 
-        /** @prop {String} trClassName - The className of the grid's rows. */
+        /** @prop {String} rowClassName - The className of the grid's rows. */
         rowClassName: React.PropTypes.string
     },
 
