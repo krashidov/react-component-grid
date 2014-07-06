@@ -18,7 +18,7 @@ var Row = React.createClass({
     /**
      * @renderCell
      * Gets an array of cell components for the row.
-     * @returns [Object] - An array of Cell components.
+     * @returns {Object[]} - An array of Cell components.
      */
     renderCell: function() {
         var record = this.props.record;

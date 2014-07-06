@@ -13,10 +13,10 @@ var emptyFn = function() {};
 var Grid = React.createClass({
     propTypes: {
 
-        /** @prop [*] data - An array of data for the grid. */
+        /** @prop {*[]} data - An array of data for the grid. */
         data: React.PropTypes.array.isRequired,
 
-        /** @prop [Object] columns - An array of column objects for the grid. */
+        /** @prop {Object[]} columns - An array of column objects for the grid. */
         columns: React.PropTypes.array.isRequired,
 
         /** @prop {String} cellClassName - The className of the grid's cells. */
